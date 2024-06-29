@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Even-Odd</title>
+   - <script>
+          function getnum(){
+            let n=document.getElementById("num").value;
+            if(n%2==0){
+           //  alert("even number"+navigator);
+           document.getElementById("val").innerHTML="EVEN="+n;
+          document.getElementById("bag").style.backgroundColor="#008000";
+           
+           document.getElementById("bag").style.backgroundImage ="url('C:\Users\admin\Desktop\webdevelopment-cs\webdevelop\day-2js\profile.jpg=')";
+            }
+            else
+            document.getElementById("val").innerHTML="ODD="+n;
+        
+         document.getElementById("bag").style.backgroundColor="#cc0000";
+          }
+    </script>
+</head>
+<body id="bag">
+    <center>
+        NUMBER<br><br>
+       <input type="text" placeholder="Enter a number" id="num" ><br><br>
+       <input type="button" value="Even/odd" onclick="getnum()"><br><br>
+
+       <h1>Out-put Here</h1>
+       <p id="val"></p>
+    </center>
+    
+</body>
+</html>
